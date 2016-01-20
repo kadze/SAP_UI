@@ -6,13 +6,13 @@
 //  Copyright (c) 2016 Andrey Shevtsov. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SAPAppDelegate.h"
 
-@interface AppDelegate ()
+@interface SAPAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SAPAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
