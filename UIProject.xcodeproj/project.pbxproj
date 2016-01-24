@@ -14,6 +14,7 @@
 		2EC1A72D1C50122500AAD97C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC1A72B1C50122500AAD97C /* Info.plist */; };
 		2EC1A72E1C50122500AAD97C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1A72C1C50122500AAD97C /* main.m */; };
 		2EC1A7321C50174700AAD97C /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1A7311C50174700AAD97C /* SAPViewController.m */; };
+		CA9E10571C5523EB00502D8B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9E10561C5523EB00502D8B /* View.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		2EC1A72C1C50122500AAD97C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC1A7301C50174700AAD97C /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
 		2EC1A7311C50174700AAD97C /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
+		CA9E10561C5523EB00502D8B /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				2EC1A7301C50174700AAD97C /* SAPViewController.h */,
 				2EC1A7311C50174700AAD97C /* SAPViewController.m */,
+				CA9E10561C5523EB00502D8B /* View.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9E10571C5523EB00502D8B /* View.xib in Resources */,
 				2EC1A72D1C50122500AAD97C /* Info.plist in Resources */,
 				2EC1A7291C50120D00AAD97C /* Images.xcassets in Resources */,
 				2EC1A7271C50120D00AAD97C /* LaunchScreen.xib in Resources */,
@@ -423,6 +427,7 @@
 				2EC1A7161C500CF100AAD97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EC1A7171C500CF100AAD97C /* Build configuration list for PBXNativeTarget "UIProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				2EC1A7191C500CF100AAD97C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

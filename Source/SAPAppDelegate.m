@@ -7,6 +7,7 @@
 //
 
 #import "SAPAppDelegate.h"
+#import "SAPViewController.h"
 
 @interface SAPAppDelegate ()
 
@@ -15,8 +16,19 @@
 @implementation SAPAppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)              application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = window;
+    
+    SAPViewController *controller = [[SAPViewController alloc] initWithNibName:NSStringFromClass([SAPViewController class]) bundle:nil];
+    
+    window.rootViewController = controller;
+    window.backgroundColor = [UIColor cyanColor];
+    
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 

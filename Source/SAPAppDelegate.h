@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SAPAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 
