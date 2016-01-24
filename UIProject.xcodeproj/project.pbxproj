@@ -15,6 +15,8 @@
 		2EC1A72E1C50122500AAD97C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1A72C1C50122500AAD97C /* main.m */; };
 		2EC1A7321C50174700AAD97C /* SAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1A7311C50174700AAD97C /* SAPViewController.m */; };
 		CA9E10571C5523EB00502D8B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9E10561C5523EB00502D8B /* View.xib */; settings = {ASSET_TAGS = (); }; };
+		CA9E105C1C55377500502D8B /* SAPLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9E105A1C55377500502D8B /* SAPLabelViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CA9E105D1C55377500502D8B /* SAPLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 		2EC1A7301C50174700AAD97C /* SAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewController.h; sourceTree = "<group>"; };
 		2EC1A7311C50174700AAD97C /* SAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPViewController.m; sourceTree = "<group>"; };
 		CA9E10561C5523EB00502D8B /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		CA9E10591C55377500502D8B /* SAPLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLabelViewController.h; sourceTree = "<group>"; };
+		CA9E105A1C55377500502D8B /* SAPLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPLabelViewController.m; sourceTree = "<group>"; };
+		CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPLabelViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		2EC1A71A1C5011F600AAD97C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CA9E10581C55371A00502D8B /* SAPLabelViewController */,
 				2EC1A72F1C50174700AAD97C /* UI */,
 				2EC1A71B1C5011F600AAD97C /* SAPAppDelegate.h */,
 				2EC1A71C1C5011F600AAD97C /* SAPAppDelegate.m */,
@@ -134,6 +140,16 @@
 				CA9E10561C5523EB00502D8B /* View.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		CA9E10581C55371A00502D8B /* SAPLabelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA9E10591C55377500502D8B /* SAPLabelViewController.h */,
+				CA9E105A1C55377500502D8B /* SAPLabelViewController.m */,
+				CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */,
+			);
+			path = SAPLabelViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +237,7 @@
 				2EC1A72D1C50122500AAD97C /* Info.plist in Resources */,
 				2EC1A7291C50120D00AAD97C /* Images.xcassets in Resources */,
 				2EC1A7271C50120D00AAD97C /* LaunchScreen.xib in Resources */,
+				CA9E105D1C55377500502D8B /* SAPLabelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 			files = (
 				2EC1A72E1C50122500AAD97C /* main.m in Sources */,
 				2EC1A7321C50174700AAD97C /* SAPViewController.m in Sources */,
+				CA9E105C1C55377500502D8B /* SAPLabelViewController.m in Sources */,
 				2EC1A71F1C5011F600AAD97C /* SAPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

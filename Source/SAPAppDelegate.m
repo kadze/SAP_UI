@@ -7,7 +7,8 @@
 //
 
 #import "SAPAppDelegate.h"
-#import "SAPViewController.h"
+//#import "SAPViewController.h"
+#import "SAPLabelViewController.h"
 
 @interface SAPAppDelegate ()
 
@@ -21,13 +22,12 @@
 {
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = window;
-    
-    SAPViewController *controller = [[SAPViewController alloc] initWithNibName:NSStringFromClass([SAPViewController class]) bundle:nil];
-    
-    window.rootViewController = controller;
+    window.rootViewController = [SAPLabelViewController new];
     window.backgroundColor = [UIColor cyanColor];
     
     [window makeKeyAndVisible];
+    
+    window.rootViewController.view.frame = CGRectMake(0, 0, 200, 200);
     
     return YES;
 }
