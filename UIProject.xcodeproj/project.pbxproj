@@ -17,6 +17,7 @@
 		CA9E10571C5523EB00502D8B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9E10561C5523EB00502D8B /* View.xib */; settings = {ASSET_TAGS = (); }; };
 		CA9E105C1C55377500502D8B /* SAPLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9E105A1C55377500502D8B /* SAPLabelViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CA9E105D1C55377500502D8B /* SAPLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		CA9E10601C5606B000502D8B /* SAPLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9E105F1C5606B000502D8B /* SAPLabelView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		CA9E10591C55377500502D8B /* SAPLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLabelViewController.h; sourceTree = "<group>"; };
 		CA9E105A1C55377500502D8B /* SAPLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPLabelViewController.m; sourceTree = "<group>"; };
 		CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPLabelViewController.xib; sourceTree = "<group>"; };
+		CA9E105E1C5606B000502D8B /* SAPLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLabelView.h; sourceTree = "<group>"; };
+		CA9E105F1C5606B000502D8B /* SAPLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPLabelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				CA9E10591C55377500502D8B /* SAPLabelViewController.h */,
 				CA9E105A1C55377500502D8B /* SAPLabelViewController.m */,
 				CA9E105B1C55377500502D8B /* SAPLabelViewController.xib */,
+				CA9E105E1C5606B000502D8B /* SAPLabelView.h */,
+				CA9E105F1C5606B000502D8B /* SAPLabelView.m */,
 			);
 			path = SAPLabelViewController;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC1A72E1C50122500AAD97C /* main.m in Sources */,
+				CA9E10601C5606B000502D8B /* SAPLabelView.m in Sources */,
 				2EC1A7321C50174700AAD97C /* SAPViewController.m in Sources */,
 				CA9E105C1C55377500502D8B /* SAPLabelViewController.m in Sources */,
 				2EC1A71F1C5011F600AAD97C /* SAPAppDelegate.m in Sources */,

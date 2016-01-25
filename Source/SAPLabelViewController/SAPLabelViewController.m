@@ -7,6 +7,7 @@
 //
 
 #import "SAPLabelViewController.h"
+#import "SAPLabelView.h"
 
 @interface SAPLabelViewController ()
 
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.label.text = @"nanannana";
+//    ((SAPLabelView *)self.view).label.text = @"nanannana";
 }
 
 - (void)didReceiveMemoryWarning {

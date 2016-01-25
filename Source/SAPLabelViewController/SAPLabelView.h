@@ -1,5 +1,5 @@
 //
-//  SAPLabelViewController.h
+//  SAPLabelView.h
 //  UIProject
 //
 //  Created by S A P on 1/24/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SAPLabelViewController : UIViewController
-
+@interface SAPLabelView : UIView
+@property (nonatomic, strong) IBOutlet UILabel *label;
 
 @end
