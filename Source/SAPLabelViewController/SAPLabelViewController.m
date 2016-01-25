@@ -22,9 +22,9 @@
 - (void)setData:(NSString *)data {
     if (_data != data) {
         _data = data;
-        
-        self.labelView.label.text = data;
     }
+    
+    self.labelView.label.text = data;
 }
 
 - (SAPLabelView *)labelView {
@@ -40,8 +40,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    ((SAPLabelView *)self.view).label.text = @"nanannana";
-    self.labelView.label.text = @"nanananana";
+    
+    self.data = self.data;
 }
 
 - (void)didReceiveMemoryWarning {
