@@ -10,10 +10,30 @@
 #import "SAPLabelView.h"
 
 @interface SAPLabelViewController ()
+@property (nonatomic, readonly) SAPLabelView *labelView;
 
 @end
 
 @implementation SAPLabelViewController
+
+#pragma mark-
+#pragma mark Accessors
+
+- (void)setData:(NSString *)data {
+    if (_data != data) {
+        _data = data;
+        
+        self.labelView.label.text = data;
+    }
+}
+
+- (SAPLabelView *)labelView {
+    if ([self isViewLoaded] && [self.view isKindOfClass:[SAPLabelView class]]) {
+        return (SAPLabelView *)self.view;
+    }
+    
+    return nil;
+}
 
 #pragma mark -
 #pragma mark View Lifecycle
@@ -21,6 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    ((SAPLabelView *)self.view).label.text = @"nanannana";
+    self.labelView.label.text = @"nanananana";
 }
 
 - (void)didReceiveMemoryWarning {

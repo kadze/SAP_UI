@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SAPLabelViewController : UIViewController
-
+@property (nonatomic, strong) NSString *data;
 
 @end

@@ -14,7 +14,7 @@
 #pragma mark Public
 
 - (void)awakeFromNib {
-    self.label.text = @"nananana";
+//    self.label.text = @"nananana";
 }
 
 /*
