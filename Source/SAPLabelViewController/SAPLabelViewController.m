@@ -18,16 +18,8 @@
 #pragma mark View Lifecycle
 
 - (void)viewDidLoad {
-//    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    label.text = @"tralalala";
-    label.backgroundColor = [UIColor redColor];
-    
-    self.view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
-    self.view.opaque = NO;
-    
-    [self.view addSubview:label];
+    [super viewDidLoad];
+    self.label.text = @"nanannana";
 }
 
 - (void)didReceiveMemoryWarning {

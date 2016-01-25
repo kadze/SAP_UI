@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SAPLabelViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel *label;
 
 @end
