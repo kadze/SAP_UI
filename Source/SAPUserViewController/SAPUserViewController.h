@@ -13,4 +13,6 @@
 @interface SAPUserViewController : UIViewController
 @property (nonatomic, strong) SAPUser *user;
 
+- (IBAction)onRotate:(id)sender;
+
 @end

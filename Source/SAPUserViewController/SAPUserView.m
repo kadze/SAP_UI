@@ -8,6 +8,7 @@
 
 #import "SAPUserView.h"
 #import "SAPUser.h"
+#import <math.h>
 
 @implementation SAPUserView
 
@@ -25,9 +26,14 @@
 #pragma mark -
 #pragma mark Public
 
+- (void)rotateLabel {
+    self.label.transform = CGAffineTransformMakeRotation((float)arc4random() / UINT32_MAX * 2 * M_PI);
+}
+
 - (void)fillWithUser:(SAPUser *)user {
     self.label.text = user.fullName;
 }
+
 
 
 @end
