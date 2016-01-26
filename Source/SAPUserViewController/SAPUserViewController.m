@@ -1,35 +1,35 @@
 //
-//  SAPLabelViewController.m
+//  SAPUserViewController.m
 //  UIProject
 //
 //  Created by S A P on 1/24/16.
 //  Copyright © 2016 Andrey Shevtsov. All rights reserved.
 //
 
-#import "SAPLabelViewController.h"
-#import "SAPLabelView.h"
+#import "SAPUserViewController.h"
+#import "SAPUserView.h"
 
-@interface SAPLabelViewController ()
-@property (nonatomic, readonly) SAPLabelView *labelView;
+@interface SAPUserViewController ()
+@property (nonatomic, readonly) SAPUserView *userView;
 
 @end
 
-@implementation SAPLabelViewController
+@implementation SAPUserViewController
 
 #pragma mark-
 #pragma mark Accessors
 
-- (void)setData:(NSString *)data {
-    if (_data != data) {
-        _data = data;
+- (void)setUser:(SAPUser *)user {
+    if (_user != user) {
+        _user = user;
     }
     
-    self.labelView.label.text = data;
+    self.userView.user = user;
 }
 
-- (SAPLabelView *)labelView {
-    if ([self isViewLoaded] && [self.view isKindOfClass:[SAPLabelView class]]) {
-        return (SAPLabelView *)self.view;
+- (SAPUserView *)userView {
+    if ([self isViewLoaded] && [self.view isKindOfClass:[SAPUserView class]]) {
+        return (SAPUserView *)self.view;
     }
     
     return nil;
@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.data = self.data;
+    self.userView.user = self.user;
 }
 
 - (void)didReceiveMemoryWarning {

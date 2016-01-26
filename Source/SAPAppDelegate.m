@@ -7,8 +7,8 @@
 //
 
 #import "SAPAppDelegate.h"
-//#import "SAPViewController.h"
-#import "SAPLabelViewController.h"
+#import "SAPUserViewController.h"
+#import "SAPUser.h"
 
 @interface SAPAppDelegate ()
 
@@ -18,16 +18,18 @@
 
 
 - (BOOL)              application:(UIApplication *)application
-    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = window;
-    SAPLabelViewController *controller = [SAPLabelViewController new];
+    
+    SAPUserViewController *controller = [SAPUserViewController new];
+    controller.user = [SAPUser new];
+    
     window.rootViewController = controller;
     window.backgroundColor = [UIColor cyanColor];
+    
     [window makeKeyAndVisible];
-    controller.data = @"nanananana";
-   // window.rootViewController.view.frame = CGRectMake(0, 0, 200, 200);
     
     return YES;
 }

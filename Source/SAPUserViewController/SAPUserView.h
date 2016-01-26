@@ -1,0 +1,19 @@
+//
+//  SAPUserView.h
+//  UIProject
+//
+//  Created by S A P on 1/24/16.
+//  Copyright © 2016 Andrey Shevtsov. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class SAPUser;
+
+@interface SAPUserView : UIView
+@property (nonatomic, strong) IBOutlet UILabel  *label;
+@property (nonatomic, strong) SAPUser           *user;
+
+- (void)fillWithUser:(SAPUser *)user;
+
+@end

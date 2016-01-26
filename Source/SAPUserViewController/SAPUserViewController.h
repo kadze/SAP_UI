@@ -1,5 +1,5 @@
 //
-//  SAPLabelViewController.h
+//  SAPUserViewController.h
 //  UIProject
 //
 //  Created by S A P on 1/24/16.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SAPLabelViewController : UIViewController
-@property (nonatomic, strong) NSString *data;
+@class SAPUser;
+
+@interface SAPUserViewController : UIViewController
+@property (nonatomic, strong) SAPUser *user;
 
 @end
