@@ -35,6 +35,10 @@
                     <rect key="frame" x="83" y="198" width="128" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="recognizer" destination="AeR-WZ-UqD" id="Zrw-5K-6dX"/>
+                        <outletCollection property="gestureRecognizers" destination="AeR-WZ-UqD" appends="YES" id="fUt-Z7-zcA"/>
+                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
@@ -45,5 +49,10 @@
             </connections>
             <point key="canvasLocation" x="262" y="285"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="AeR-WZ-UqD">
+            <connections>
+                <action selector="onPan:" destination="9p0-6v-5Gq" id="EEu-72-i70"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
 </document>

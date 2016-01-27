@@ -8,63 +8,83 @@
 
 #import "SAPDraggableView.h"
 
-static NSUInteger SAPDraggableViewTouchCount = 1;
+//static NSUInteger SAPDraggableViewTouchCount = 1;
 static NSTimeInterval SAPDuration = 1.5;
 
 @interface SAPDraggableView ()
 @property (nonatomic, retain) UITouch *leadingTouch;
 
-- (void)processTouches:(NSSet *)touches;
+//- (void)processTouches:(NSSet *)touches;
+- (void)moveToLocation:(CGPoint)location;
 
 @end
 
 @implementation SAPDraggableView
 
 #pragma mark-
+#pragma mark Interface Hangling
+
+- (IBAction)onPan:(UIPanGestureRecognizer *)sender {
+    [self moveToLocation:[sender translationInView:self.superview]];
+}
+
+#pragma mark-
 #pragma makr Touch Handling
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    self.leadingTouch = [touches anyObject];
-    [self processTouches:touches];
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self processTouches:touches];
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self processTouches:touches];
-    self.leadingTouch = nil;
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self processTouches:touches];
-    self.leadingTouch = nil;
-}
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//    self.leadingTouch = [touches anyObject];
+//    [self processTouches:touches];
+//}
+//
+//- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+//    [self processTouches:touches];
+//}
+//
+//- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+//    [self processTouches:touches];
+//    self.leadingTouch = nil;
+//}
+//
+//- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+//    [self processTouches:touches];
+//    self.leadingTouch = nil;
+//}
 
 #pragma mark -
 #pragma mark Private
 
-- (void)processTouches:(NSSet *)touches {
-    if ([touches count] != SAPDraggableViewTouchCount) {
-        return;
-    }
-    
-    UITouch *touch = self.leadingTouch;
-    CGPoint location = [touch locationInView:self.superview];
-    
-    CGFloat random = arc4random() / UINT32_MAX;
-    CGFloat scale = random * 2 - 1;
-    
-    CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
-    transform = CGAffineTransformConcat(transform, CGAffineTransformMakeRotation(random * 2 * M_PI));
-    
+//- (void)processTouches:(NSSet *)touches {
+//    if ([touches count] != SAPDraggableViewTouchCount) {
+//        return;
+//    }
+//    
+//    UITouch *touch = self.leadingTouch;
+//    CGPoint location = [touch locationInView:self.superview];
+//    
+//    CGFloat random = arc4random() / UINT32_MAX;
+//    CGFloat scale = random * 2 - 1;
+//    
+//    CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+//    transform = CGAffineTransformConcat(transform, CGAffineTransformMakeRotation(random * 2 * M_PI));
+//    
+//    CGRect frame = self.frame;
+//    frame.origin = location;
+//    [UIView animateWithDuration:SAPDuration animations: ^{
+//        self.frame = frame;
+//        self.transform = transform;
+//    }];
+//}
+
+- (void)moveToLocation:(CGPoint)location {
+        
     CGRect frame = self.frame;
     frame.origin = location;
-    [UIView animateWithDuration:SAPDuration animations: ^{
-        self.frame = frame;
-        self.transform = transform;
-    }];
+    
+    [UIView animateWithDuration:SAPDuration
+                     animations: ^{
+                         self.frame = frame;
+                         
+                     }];
 }
 
 @end
