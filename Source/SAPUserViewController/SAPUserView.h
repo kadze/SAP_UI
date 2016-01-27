@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class SAPUser;
+@class SAPDraggableView;
 
 @interface SAPUserView : UIView
-@property (nonatomic, strong) IBOutlet UILabel  *label;
-@property (nonatomic, strong) IBOutlet UIButton *button;
-@property (nonatomic, strong) SAPUser           *user;
+@property (nonatomic, strong) IBOutlet UILabel          *label;
+@property (nonatomic, strong) IBOutlet UIButton         *button;
+@property (nonatomic, strong) IBOutlet SAPDraggableView *draggableView;
+@property (nonatomic, strong)          SAPUser          *user;
 
 - (void)rotateLabel;
 - (void)fillWithUser:(SAPUser *)user;

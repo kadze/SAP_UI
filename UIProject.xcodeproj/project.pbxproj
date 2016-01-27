@@ -22,6 +22,7 @@
 		CAC4211B1C5770FF004E4F1E /* SAPUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC421161C5770FF004E4F1E /* SAPUserView.m */; settings = {ASSET_TAGS = (); }; };
 		CAC4211C1C5770FF004E4F1E /* SAPUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC421181C5770FF004E4F1E /* SAPUserViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CAC4211D1C5770FF004E4F1E /* SAPUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC421191C5770FF004E4F1E /* SAPUserViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		CAC421201C58BB5D004E4F1E /* SAPDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4211F1C58BB5D004E4F1E /* SAPDraggableView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CAC421171C5770FF004E4F1E /* SAPUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPUserViewController.h; sourceTree = "<group>"; };
 		CAC421181C5770FF004E4F1E /* SAPUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPUserViewController.m; sourceTree = "<group>"; };
 		CAC421191C5770FF004E4F1E /* SAPUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPUserViewController.xib; sourceTree = "<group>"; };
+		CAC4211E1C58BB5D004E4F1E /* SAPDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPDraggableView.h; sourceTree = "<group>"; };
+		CAC4211F1C58BB5D004E4F1E /* SAPDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPDraggableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				CAC421161C5770FF004E4F1E /* SAPUserView.m */,
 				CAC421131C5770FF004E4F1E /* SAPUser.h */,
 				CAC421141C5770FF004E4F1E /* SAPUser.m */,
+				CAC4211E1C58BB5D004E4F1E /* SAPDraggableView.h */,
+				CAC4211F1C58BB5D004E4F1E /* SAPDraggableView.m */,
 			);
 			path = SAPUserViewController;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				CAC4211C1C5770FF004E4F1E /* SAPUserViewController.m in Sources */,
 				CAC4210D1C575CD4004E4F1E /* NSString+SAPStringExtentions.m in Sources */,
 				CAC4211B1C5770FF004E4F1E /* SAPUserView.m in Sources */,
+				CAC421201C58BB5D004E4F1E /* SAPDraggableView.m in Sources */,
 				CAC4211A1C5770FF004E4F1E /* SAPUser.m in Sources */,
 				2EC1A72E1C50122500AAD97C /* main.m in Sources */,
 				2EC1A7321C50174700AAD97C /* SAPViewController.m in Sources */,
