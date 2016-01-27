@@ -6,17 +6,31 @@
 //  Copyright (c) 2016 Andrey Shevtsov. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SAPAppDelegate.h"
+#import "SAPUserViewController.h"
+#import "SAPUser.h"
 
-@interface AppDelegate ()
+@interface SAPAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SAPAppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)              application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = window;
+    
+    SAPUserViewController *controller = [SAPUserViewController new];
+    controller.user = [SAPUser new];
+    
+    window.rootViewController = controller;
+    window.backgroundColor = [UIColor cyanColor];
+    
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -6,13 +6,13 @@
 //  Copyright (c) 2016 Andrey Shevtsov. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SAPViewController.h"
 
-@interface ViewController ()
+@interface SAPViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SAPViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
