@@ -15,44 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="90D-uR-fOt">
-                    <rect key="frame" x="8" y="530" width="49" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <state key="normal" title="Rotate"/>
-                    <connections>
-                        <action selector="onRotate:" destination="-1" eventType="touchUpInside" id="D6i-EG-RK7"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mymyLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWT-M9-sYY">
-                    <rect key="frame" x="0.0" y="0.0" width="119" height="83"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="0.0" y="242" width="320" height="83"/>
+                    <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" id="9p0-6v-5Gq" customClass="SAPDraggableView">
-                    <rect key="frame" x="83" y="198" width="128" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <connections>
-                        <outlet property="recognizer" destination="AeR-WZ-UqD" id="Zrw-5K-6dX"/>
-                        <outletCollection property="gestureRecognizers" destination="AeR-WZ-UqD" appends="YES" id="fUt-Z7-zcA"/>
-                    </connections>
-                </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.51000000000000001" colorSpace="calibratedRGB"/>
             <connections>
-                <outlet property="button" destination="90D-uR-fOt" id="GG7-Qz-pzC"/>
-                <outlet property="draggableView" destination="9p0-6v-5Gq" id="aX9-hi-fLR"/>
                 <outlet property="label" destination="EWT-M9-sYY" id="tE5-uw-lVC"/>
             </connections>
             <point key="canvasLocation" x="262" y="285"/>
         </view>
-        <panGestureRecognizer minimumNumberOfTouches="1" id="AeR-WZ-UqD">
-            <connections>
-                <action selector="onPan:" destination="9p0-6v-5Gq" id="EEu-72-i70"/>
-            </connections>
-        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="AeR-WZ-UqD"/>
     </objects>
 </document>

@@ -8,11 +8,9 @@
 
 #import "SAPUserViewController.h"
 #import "SAPUserView.h"
+#import "SAPMacro.h"
 
-@interface SAPUserViewController ()
-@property (nonatomic, readonly) SAPUserView *userView;
-
-@end
+SAPViewControllerBaseViewProperty(SAPUserViewController, userView, SAPUserView)
 
 @implementation SAPUserViewController
 
@@ -25,14 +23,6 @@
     }
     
     self.userView.user = user;
-}
-
-- (SAPUserView *)userView {
-    if ([self isViewLoaded] && [self.view isKindOfClass:[SAPUserView class]]) {
-        return (SAPUserView *)self.view;
-    }
-    
-    return nil;
 }
 
 #pragma mark -
@@ -52,8 +42,5 @@
 #pragma mark -
 #pragma mark Interface Handling
 
-- (IBAction)onRotate:(id)sender {
-    [self.userView rotateLabel];
-}
 
 @end
